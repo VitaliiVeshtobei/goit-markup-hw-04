@@ -143,16 +143,14 @@ img {
 .contact-link:focus {
   color: var(--accent-color);
 }
+
 .contact-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
-.mail-icon:hover,
-.mail-icon:focus {
-  fill: var(--accent-color);
-}
+
 .tell-icon:hover,
 .tell-icon:focus {
   fill: var(--accent-color);
@@ -285,7 +283,6 @@ img {
   margin-top: 0;
   margin-top: 50px;
   margin-bottom: 0px;
-
   padding-left: 0px;
 }
 .team-item:not(:last-child) {
@@ -308,10 +305,26 @@ img {
   justify-content: center;
   margin-top: 16px;
 }
-
+.team-icon-container {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-icon-container:hover,
+.team-icon-container:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
 .team-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
+.team-icon:hover,
+.team-icon:focus {
+  fill: #ffffff;
 }
 .team-item-icon {
   width: 44px;
@@ -319,10 +332,48 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: teal;
 }
 .team-item-icon:not(:last-child) {
   margin-right: 10px;
+}
+/* Clients */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: var(--secondary-text-color);
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.clients-ion {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-icon-container {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+}
+.clients-icon-container:hover,
+.clients-icon-container:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 /* footer */
 .footer {
@@ -440,6 +491,7 @@ img {
   margin-top: 50px;
   margin-bottom: 0;
 }
+
 .projects-item {
   margin-right: 30px;
   margin-bottom: 30px;
