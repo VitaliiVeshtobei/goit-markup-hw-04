@@ -288,6 +288,9 @@ img {
   margin-bottom: 0px;
   padding-left: 0px;
 }
+.team-item {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -413,8 +416,65 @@ img {
 .footer-flex {
   display: flex;
 }
+
+/* connect */
+
+.connect {
+  margin-left: 70px;
+}
 .connect-links {
   display: flex;
+  height: 44px;
+  margin-top: 20px;
+}
+.connect-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.connect-icon-list {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.connect-icon-list {
+  margin: 0;
+}
+.connect-item-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 50%;
+}
+.connect-icon-container {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.connect-icon-container:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.connect-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.connect-item-icon:not(:last-child) {
+  margin-right: 10px;
 }
 /* hero-button */
 
